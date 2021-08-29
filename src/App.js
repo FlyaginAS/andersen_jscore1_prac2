@@ -8,6 +8,10 @@ import {
   failureCb,
 } from './asynchronous-programming/task2';
 import { delay } from './asynchronous-programming/task3';
+import {
+  getAllParallel,
+  getAllСonsistently,
+} from './asynchronous-programming/task5';
 
 function App() {
   return (
@@ -46,3 +50,10 @@ console.log('********************TASK3**************************');
 delay(1000).then((value) =>
   console.log(`Done with ${value}`, '**correct "Done with 100"')
 );
+
+/***********************TASK5********************************** */
+console.log('********************TASK5**************************');
+getAllParallel(['1', '2', '3']);
+console.log('**correct Array(3) [ "1-data got", "2-data got", "3-data got" ]');
+getAllСonsistently(['1', '2', '3']);
+console.log('**correct Array(3) [ "1-data got", "2-data got", "3-data got" ]');
