@@ -14,6 +14,7 @@ import {
 } from './asynchronous-programming/task5';
 import getResolvedPromise from './asynchronous-programming/task6';
 import fooo from './asynchronous-programming/task7';
+import goo from './asynchronous-programming/task8';
 
 function App() {
   return (
@@ -74,3 +75,7 @@ getResolvedPromise(500)
 /***********************TASK7********************************** */
 console.log('********************TASK7**************************');
 fooo();
+
+/***********************TASK8********************************** */
+console.log('********************TASK8**************************');
+goo('https://jsonplaceholder.typicode.com/users');
