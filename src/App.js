@@ -13,6 +13,7 @@ import {
   getAllСonsistently,
 } from './asynchronous-programming/task5';
 import getResolvedPromise from './asynchronous-programming/task6';
+import fooo from './asynchronous-programming/task7';
 
 function App() {
   return (
@@ -69,3 +70,7 @@ getResolvedPromise(500)
   })
   .catch((err) => console.log(err.message))
   .finally(() => console.log('This is finally'));
+
+/***********************TASK7********************************** */
+console.log('********************TASK7**************************');
+fooo();
