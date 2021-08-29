@@ -15,6 +15,7 @@ import {
 import getResolvedPromise from './asynchronous-programming/task6';
 import fooo from './asynchronous-programming/task7';
 import goo from './asynchronous-programming/task8';
+import zoo from './asynchronous-programming/task9';
 
 function App() {
   return (
@@ -79,3 +80,7 @@ fooo();
 /***********************TASK8********************************** */
 console.log('********************TASK8**************************');
 goo('https://jsonplaceholder.typicode.com/users');
+
+/***********************TASK9********************************** */
+console.log('********************TASK9**************************');
+zoo();
