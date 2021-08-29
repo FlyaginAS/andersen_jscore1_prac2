@@ -16,6 +16,7 @@ import getResolvedPromise from './asynchronous-programming/task6';
 import fooo from './asynchronous-programming/task7';
 import goo from './asynchronous-programming/task8';
 import zoo from './asynchronous-programming/task9';
+import Musician from './asynchronous-programming/task10';
 
 function App() {
   return (
@@ -84,3 +85,8 @@ goo('https://jsonplaceholder.typicode.com/users');
 /***********************TASK9********************************** */
 console.log('********************TASK9**************************');
 zoo();
+
+/***********************TASK10********************************** */
+console.log('********************TASK10**************************');
+let musician = new Musician('https://jsonplaceholder.typicode.com/albums');
+musician.getAlbums().then(console.log);
