@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { foo, createCb } from './asynchronous-programming/task1';
+import { parseJSON, successCb, failureCb } from './asynchronous-programming/task2';
 
 function App() {
   return (
@@ -28,3 +29,9 @@ console.log('**correct x > 10 and "cb"');
 
 /***********************TASK2********************************** */
 console.log('********************TASK2**************************');
+parseJSON('{"x":10}', successCb, failureCb);
+console.log('**correct Success parse and {x:10}');
+console.log('******************');
+parseJSON('{x}', successCb, failureCb);
+console.log('**correct "Failure Parse" \n Syntax error bla-bla...');
+console.log('******************');
