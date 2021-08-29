@@ -12,6 +12,7 @@ import {
   getAllParallel,
   getAllСonsistently,
 } from './asynchronous-programming/task5';
+import getResolvedPromise from './asynchronous-programming/task6';
 
 function App() {
   return (
@@ -57,3 +58,14 @@ getAllParallel(['1', '2', '3']);
 console.log('**correct Array(3) [ "1-data got", "2-data got", "3-data got" ]');
 getAllСonsistently(['1', '2', '3']);
 console.log('**correct Array(3) [ "1-data got", "2-data got", "3-data got" ]');
+
+/***********************TASK6********************************** */
+console.log('********************TASK6**************************');
+getResolvedPromise(500)
+  .then((result) => {
+    if (result > 300) {
+      throw new Error('Ошибка');
+    }
+  })
+  .catch((err) => console.log(err.message))
+  .finally(() => console.log('This is finally'));
